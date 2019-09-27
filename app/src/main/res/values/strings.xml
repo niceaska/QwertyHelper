@@ -16,10 +16,26 @@
         <item>ъ</item>
         <item>ф</item>
         <item>ы</item>
-
+        <item>в</item>
+        <item>а</item>
+        <item>п</item>
+        <item>р</item>
+        <item>о</item>
+        <item>л</item>
+        <item>д</item>
+        <item>ж</item>
+        <item>э</item>
+        <item>я</item>
+        <item>ч</item>
+        <item>с</item>
+        <item>м</item>
+        <item>и</item>
+        <item>т</item>
+        <item>ь</item>
+        <item>б</item>
+        <item>ю</item>
     </string-array>
     <string-array name="latin">
-
         <item>q</item>
         <item>w</item>
         <item>e</item>
@@ -34,5 +50,23 @@
         <item>]</item>
         <item>a</item>
         <item>s</item>
+        <item>d</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>\;</item>
+        <item>\'</item>
+        <item>z</item>
+        <item>x</item>
+        <item>c</item>
+        <item>v</item>
+        <item>b</item>
+        <item>n</item>
+        <item>m</item>
+        <item>,</item>
+        <item>.</item>
     </string-array>
 </resources>
