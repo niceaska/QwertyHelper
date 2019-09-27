@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">QwertyHelper</string>
+    <string name="text_caption">Ввведите свой пароль на русском</string>
+    <string-array name="russians">
+        <item>й</item>
+        <item>ц</item>
+        <item>у</item>
+        <item>к</item>
+        <item>е</item>
+        <item>н</item>
+        <item>г</item>
+        <item>ш</item>
+        <item>щ</item>
+        <item>з</item>
+        <item>х</item>
+        <item>ъ</item>
+        <item>ф</item>
+        <item>ы</item>
+
+    </string-array>
+    <string-array name="latin">
+
+        <item>q</item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>y</item>
+        <item>u</item>
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+        <item>[</item>
+        <item>]</item>
+        <item>a</item>
+        <item>s</item>
+    </string-array>
+</resources>
