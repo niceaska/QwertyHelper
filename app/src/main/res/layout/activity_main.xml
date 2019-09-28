@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:padding="4dp"
+    android:padding="12dp"
     android:layout_height="match_parent" >
 
     <TextView
@@ -12,23 +13,85 @@
         android:layout_height="wrap_content"
         android:text="@string/text_caption"  />
 
-    <TextView
-        android:id="@+id/res_view"
-        android:textAppearance="@style/resultTextAppereance"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/resultTextView"
-        tools:texts="result"/>
+        android:orientation="horizontal"
+        android:background="@drawable/pass_shape"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/res_view"
+            style="@style/resultTextView"
+            android:layout_weight= "1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/resultTextAppereance"
+            tools:texts="resultd" />
+
+        <ImageButton
+            android:id="@+id/copypast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_content_copy_black_24dp"
+            style="@style/copy_button" />
+
+    </LinearLayout>
 
     <EditText
         android:id="@+id/edit_source"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:imeOptions="flagNoExtractUi"
         android:inputType="text"/>
+    <CheckBox
+        android:id="@+id/checkcaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заглавные буквы"
+        android:checked="true" />
+    <CheckBox
+        android:id="@+id/checkdigits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Цифры"
+        android:checked="true"  />
+    <CheckBox
+        android:id="@+id/checsymbols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Специальные символы"
+        android:checked="true"  />
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pass_shape" >
 
+    <TextView
+        android:id="@+id/gen_view"
+        style="@style/resultTextView"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/resultTextAppereance"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/copy_second"
+        tools:texts="resultd" />
 
-
-
-
+    <ImageButton
+        android:id="@+id/copy_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_content_copy_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        style="@style/copy_button" />
+</RelativeLayout>
+    <Button
+        android:id = "@+id/genpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Генерировать"  />
 </LinearLayout>

@@ -2,7 +2,8 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme">
-        <!-- Customize your theme here. -->
+        <item name="android:buttonStyle">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
 
     </style>
 
@@ -14,6 +15,10 @@
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:layout_marginBottom">16dp</item>
         <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="copy_button">
+        <item name="android:padding">8dp</item>
     </style>
 
 

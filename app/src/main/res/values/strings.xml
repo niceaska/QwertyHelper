@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">QwertyHelper</string>
     <string name="text_caption">Ввведите свой пароль на русском</string>
+    <string name ="clipboard">Password</string>
+    <string name = "copied">Скопировано</string>
+    <plurals name="symbol_count">
+<item quantity="one" >symbol</item>
+        <item quantity="few">symbols</item>
+        <item quantity="many">symbols</item>
+    </plurals>
     <string-array name="russians">
         <item>й</item>
         <item>ц</item>
@@ -34,6 +41,7 @@
         <item>ь</item>
         <item>б</item>
         <item>ю</item>
+        <item>ё</item>
     </string-array>
     <string-array name="latin">
         <item>q</item>
@@ -68,5 +76,6 @@
         <item>m</item>
         <item>,</item>
         <item>.</item>
+        <item>`</item>
     </string-array>
 </resources>
