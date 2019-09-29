@@ -80,7 +80,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 resultView.setText(passwordsHelper.convert(s));
                 copyButton.setEnabled(s.length() > 0);
 
-                int level = passwordsHelper.checkPassword(s) * 400;
+                int level = passwordsHelper.checkPassword(resultView.getText().toString()) * 400;
                 String [] difficult = getResources().getStringArray(R.array.passwords_difficulty);
                 passDiffImage.getDrawable().setLevel(level > 10000 ? 10000 : level);
 
