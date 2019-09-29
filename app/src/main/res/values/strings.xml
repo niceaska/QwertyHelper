@@ -1,13 +1,28 @@
 <resources>
     <string name="app_name">QwertyHelper</string>
-    <string name="text_caption">Ввведите свой пароль на русском</string>
+    <string name="text_caption">Здесь вы сможете посмотреть свой пароль введенный по методу "русское слово в английской раскладке."</string>
+    <string name="gen_text_caption">Сгенерировать случайный пароль ему на замену:</string>
+
     <string name ="clipboard">Password</string>
     <string name = "copied">Скопировано</string>
+    <string name="generate_pass">Генерировать</string>
+    <string name="caps_checkbox">Заглавные буквы</string>
+    <string name="digits_checkbox">Цифры</string>
+    <string name="special_checkbox">Специальные символы</string>
     <plurals name="symbol_count">
-<item quantity="one" >symbol</item>
-        <item quantity="few">symbols</item>
-        <item quantity="many">symbols</item>
+
+    <item quantity="one" >Длина пароля: %d символ</item>
+        <item quantity="few">Длина пароля: %d символа</item>
+        <item quantity="many">Длина пароля: %d символов</item>
     </plurals>
+
+    <string-array name="passwords_difficulty">
+        <item>Слабый</item>
+        <item>Средний</item>
+        <item>Хороший</item>
+        <item>Отличный</item>
+    </string-array>
+
     <string-array name="russians">
         <item>й</item>
         <item>ц</item>

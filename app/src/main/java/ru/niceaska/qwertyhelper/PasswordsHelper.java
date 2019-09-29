@@ -2,6 +2,7 @@ package ru.niceaska.qwertyhelper;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 public class PasswordsHelper {
     private final String[] fromLang;
@@ -39,5 +40,20 @@ public class PasswordsHelper {
             }
         }
         return (res);
+    }
+
+    public int checkPassword(CharSequence pass) {
+        boolean isCaps = Pattern.matches("A-Z", pass);
+        boolean isDigit = Pattern.matches("\\d", pass);
+        boolean isAlphs = Pattern.matches("a-z", pass);;
+        boolean isSpecial = Pattern.matches("[^A-Za-z0-9]", pass);
+
+        int res = pass.length();
+
+        if (res > 8) {
+            res += ((isAlphs && isCaps) || (isAlphs && isDigit)) ? 2 : 0;
+            res += ((isAlphs || isCaps || isDigit) && isSpecial) ? 3 : 0;
+        }
+        return res;
     }
 }

@@ -1,35 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:padding="12dp"
-    android:layout_height="match_parent" >
-
-    <TextView
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        style="@style/main_vertical_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_red_dark"
-        android:text="@string/text_caption"  />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/res_view"
-        android:textAppearance="@style/resultTextAppereance"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/resultTextView"
-        tools:texts="result"/>
+        <TextView
+            style="@style/text_caption_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_caption" />
 
-    <EditText
-        android:id="@+id/edit_source"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
+        <LinearLayout
+            style="@style/vertical_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/res_view"
+                style="@style/text_view_weight"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/resultTextAppereance"
+                tools:texts="resultd" />
+
+            <ImageButton
+                android:id="@+id/copypast"
+                style="@style/copy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_content_copy_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/password_diff"
+                style="@style/text_view_weight"
+                android:layout_height="wrap_content"
+                tools:texts="good" />
+
+            <ImageView
+                android:id="@+id/password_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="10000"
+                android:src="@drawable/password_mark" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"/>
+
+        <TextView
+            style="@style/text_caption_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gen_text_caption" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkcaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/caps_checkbox" />
+        <CheckBox
+            android:id="@+id/checkdigits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/digits_checkbox"  />
+        <CheckBox
+            android:id="@+id/count_symbols"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/special_checkbox"  />
+            <Button
+                android:id = "@+id/genpass"
+                style="@style/button_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:text="@string/generate_pass"
+                android:textAlignment="center" />
+    </LinearLayout>
+        <SeekBar
+            android:id="@+id/pass_len_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/seekbar_caption"
+            style="@style/seekbar_caption_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pass_shape" >
+
+            <TextView
+                android:id="@+id/gen_view"
+                style="@style/gen_text_view"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/resultTextAppereance"
+                tools:texts="resultd" />
+
+            <ImageButton
+                android:id="@+id/copy_second"
+                style="@style/copy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_content_copy_black_24dp" />
+        </RelativeLayout>
 
 
-
-
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

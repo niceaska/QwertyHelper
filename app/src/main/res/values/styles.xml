@@ -2,9 +2,10 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme">
-        <item name="android:buttonStyle">@color/colorAccent</item>
-        <item name="android:background">@color/colorPrimary</item>
-
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
     </style>
 
     <style name="resultTextAppereance">
@@ -19,6 +20,42 @@
 
     <style name="copy_button">
         <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="vertical_linear">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/pass_shape</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="gen_text_view" parent="resultTextView">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_toLeftOf">@id/copy_second</item>
+    </style>
+
+    <style name="main_vertical_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="text_view_weight">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="seekbar_caption_style">
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="button_text_color">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="text_caption_style">
+        <item name="android:layout_marginBottom">8dp</item>
     </style>
 
 
