@@ -67,7 +67,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         genButton.setOnClickListener(this);
         copyButtonGen.setOnClickListener(this);
 
-        seekBarCaption.setText("Длина пароля: 8 символов");
+        seekBarCaption.setText(getResources().getString(R.string.seekbar_oninit));
 
         editText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -154,7 +154,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         ClipboardManager manager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
         if (manager != null) {
             manager.setPrimaryClip(ClipData.newPlainText(
-                    "Пароль", copyView.getText().toString()));
+                    getString(R.string.password), copyView.getText().toString()));
         }
         Toast.makeText(MainActivity.this, R.string.copied, Toast.LENGTH_SHORT).show();
     }

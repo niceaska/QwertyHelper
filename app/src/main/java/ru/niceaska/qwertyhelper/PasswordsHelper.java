@@ -43,9 +43,9 @@ public class PasswordsHelper {
     }
 
     public int checkPassword(CharSequence pass) {
-        boolean isCaps = Pattern.matches("A-Z", pass);
+        boolean isCaps = Pattern.matches("[A-Z]", pass);
         boolean isDigit = Pattern.matches("\\d", pass);
-        boolean isAlphs = Pattern.matches("a-z", pass);;
+        boolean isAlphs = Pattern.matches("[a-z]", pass);;
         boolean isSpecial = Pattern.matches("[^A-Za-z0-9]", pass);
 
         int res = pass.length();

@@ -9,6 +9,8 @@
     <string name="caps_checkbox">Заглавные буквы</string>
     <string name="digits_checkbox">Цифры</string>
     <string name="special_checkbox">Специальные символы</string>
+    <string name="password">Пароль</string>
+    <string name="seekbar_oninit">Длина пароля: 8 символов</string>
     <plurals name="symbol_count">
 
     <item quantity="one" >Длина пароля: %d символ</item>

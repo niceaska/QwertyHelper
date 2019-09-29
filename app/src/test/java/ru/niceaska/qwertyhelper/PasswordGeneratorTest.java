@@ -17,7 +17,7 @@ public class PasswordGeneratorTest {
     @Test
     public void generatePassword() {
         for (int i = 0; i < 108; i++) {
-            assertEquals(passwordGenerator.generatePassword(((int)Math.random() * 100), i).length(), i);
+            assertEquals(i, passwordGenerator.generatePassword(((int)Math.random() * 100), i).length());
         }
     }
 }
